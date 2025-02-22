@@ -1,0 +1,169 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "*://*.doubleclick.net/*",
+      "resourceTypes": ["script", "image", "stylesheet", "font", "object", "xmlhttprequest", "media"]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "*://*.googletagmanager.com/*",
+      "resourceTypes": ["script", "image", "stylesheet", "font", "object", "xmlhttprequest", "media"]
+    }
+  },
+  {
+    "id": 3,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "*://*.google-analytics.com/*",
+      "resourceTypes": ["script", "image", "stylesheet", "font", "object", "xmlhttprequest", "media"]
+    }
+  },
+  {
+    "id": 4,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "*://*.facebook.com/tr/*",
+      "resourceTypes": ["script", "image", "stylesheet", "font", "object", "xmlhttprequest", "media"]
+    }
+  },
+  {
+    "id": 5,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "*://*.twitter.com/i/ads/*",
+      "resourceTypes": ["script", "image", "stylesheet", "font", "object", "xmlhttprequest", "media"]
+    }
+  },
+  {
+    "id": 6,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "*://*.adsymptotic.com/*",
+      "resourceTypes": ["script", "image", "stylesheet", "font", "object", "xmlhttprequest", "media"]
+    }
+  },
+  {
+    "id": 7,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "*://*.adbrite.com/*",
+      "resourceTypes": ["script", "image", "stylesheet", "font", "object", "xmlhttprequest", "media"]
+    }
+  },
+  {
+    "id": 8,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "*://*.scorecardresearch.com/*",
+      "resourceTypes": ["script", "image", "stylesheet", "font", "object", "xmlhttprequest", "media"]
+    }
+  },
+  {
+    "id": 9,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "*://*.taboola.com/*",
+      "resourceTypes": ["script", "image", "stylesheet", "font", "object", "xmlhttprequest", "media"]
+    }
+  },
+  {
+    "id": 10,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "*://*.outbrain.com/*",
+      "resourceTypes": ["script", "image", "stylesheet", "font", "object", "xmlhttprequest", "media"]
+    }
+  },
+  {
+    "id": 11,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "*://*.amazon-adsystem.com/*",
+      "resourceTypes": ["script", "image", "stylesheet", "font", "object", "xmlhttprequest", "media"]
+    }
+  },
+  {
+    "id": 12,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "*://*.ads.pubmatic.com/*",
+      "resourceTypes": ["script", "image", "stylesheet", "font", "object", "xmlhttprequest", "media"]
+    }
+  },
+  {
+    "id": 13,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "*://*.quantserve.com/*",
+      "resourceTypes": ["script", "image", "stylesheet", "font", "object", "xmlhttprequest", "media"]
+    }
+  },
+  {
+    "id": 14,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "*://*.ads.yahoo.com/*",
+      "resourceTypes": ["script", "image", "stylesheet", "font", "object", "xmlhttprequest", "media"]
+    }
+  },
+  {
+    "id": 15,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "*://*.zedo.com/*",
+      "resourceTypes": ["script", "image", "stylesheet", "font", "object", "xmlhttprequest", "media"]
+    }
+  },
+  {
+    "id": 16,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "*://*.jsdelivr.net/npm/fingerprintjs2@*",
+      "resourceTypes": ["script"]
+    }
+  },
+  {
+    "id": 17,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "*://*.fingerprintjs.com/v3/*",
+      "resourceTypes": ["script"]
+    }
+  },
+  {
+    "id": 18,
+    "priority": 1,
+    "action": {
+      "type": "modifyHeaders",
+      "requestHeaders": [
+        { "header": "User-Agent", "operation": "set", "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" }
+      ]
+    },
+    "condition": {
+      "urlFilter": "*",
+      "resourceTypes": ["main_frame", "sub_frame", "stylesheet", "script", "image", "font", "object", "xmlhttprequest", "media"]
+    }
+  }
+]
