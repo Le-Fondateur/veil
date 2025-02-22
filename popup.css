@@ -2,50 +2,50 @@ body {
   font-family: sans-serif;
   width: 300px;
   padding: 10px;
-  background-color: #1e1e1e; /* Dark background */
+  background-color: #1e1e1e; 
   color: #fff;
-  border-radius: 8px; /* Rounded corners for the entire popup */
+  border-radius: 8px; 
 }
 
 h1 {
   text-align: center;
   margin-bottom: 20px;
-  font-size: 1.5em; /* Slightly larger heading */
+  font-size: 1.5em;
 }
 
 .card {
   background-color: #2d2d2d;
   border-radius: 8px;
   margin-bottom: 10px;
-  overflow: hidden; /* Ensures rounded corners are applied to the content */
+  overflow: hidden; 
 }
 
 .toggle-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 12px 15px; /* Increased padding */
-  border-radius: 6px; /* Rounded corners for toggle containers */
-  margin-bottom: 0px; /* Spacing between toggle containers */
-  background-color: #2d2d2d; /* Subtle background for the containers */
+  padding: 12px 15px; 
+  border-radius: 6px; 
+  margin-bottom: 0px; 
+  background-color: #2d2d2d;
 }
 
 .toggle-label {
   font-size: 1em;
-  flex-grow: 1; /* Allow label to take up available space */
-  margin-right: 10px; /* Space between label and switch */
+  flex-grow: 1; 
+  margin-right: 10px;
   display: flex;
-  align-items: center; /* Vertically align the icon and text */
+  align-items: center;
 }
 
 .toggle-label img {
-  margin-right: 5px; /* Space between icon and text */
+  margin-right: 5px; 
 }
 
 .toggle-switch {
   position: relative;
   width: 40px;
-  height: 22px; /* Slightly taller switch */
+  height: 22px; 
   cursor: pointer;
 }
 
@@ -61,7 +61,7 @@ h1 {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #555; /* Darker background for the slider */
+  background-color: #555;
   transition: .4s;
   border-radius: 34px;
 }
@@ -69,17 +69,17 @@ h1 {
 .slider:before {
   position: absolute;
   content: "";
-  height: 18px; /* Slightly larger handle */
+  height: 18px; 
   width: 18px;
   left: 2px;
   bottom: 2px;
-  background-color: #fff; /* White handle */
+  background-color: #fff;
   transition: .4s;
   border-radius: 50%;
 }
 
 input:checked + .slider {
-  background-color: #e53935; /* Red color for active state */
+  background-color: #e53935;
 }
 
 input:focus + .slider {
@@ -93,20 +93,19 @@ input:checked + .slider:before {
 .settings-button {
   display: block;
   width: 100%;
-  padding: 12px; /* Increased padding */
+  padding: 12px; 
   margin-top: 16px;
-  background-color: #e53935; /* Red button */
+  background-color: #e53935;
   color: white;
   border: none;
-  border-radius: 6px; /* Rounded corners */
+  border-radius: 6px; 
   cursor: pointer;
   text-align: center;
   font-size: 1em;
-  transition: background-color 0.2s ease; /* Add a transition for hover effect */
-  /* Add a subtle box-shadow */
+  transition: background-color 0.2s ease;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .settings-button:hover {
-  background-color: #c62828; /* Darker red on hover */
+  background-color: #c62828;
 }

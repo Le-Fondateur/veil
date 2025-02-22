@@ -1,5 +1,3 @@
-// content_script_webgl.js
-
 (function() {
   // Override WebGLRenderingContext.getParameter to return consistent values
   const originalGetParameter = WebGLRenderingContext.prototype.getParameter;
@@ -19,6 +17,6 @@
   // Override WebGLRenderingContext.getSupportedExtensions to return a limited set
   const originalGetSupportedExtensions = WebGLRenderingContext.prototype.getSupportedExtensions;
   WebGLRenderingContext.prototype.getSupportedExtensions = function() {
-    return []; // Return an empty array to disable extensions
+    return []; 
   };
 })();

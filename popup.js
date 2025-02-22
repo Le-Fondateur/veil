@@ -1,7 +1,5 @@
-// popup.js
-
 document.addEventListener('DOMContentLoaded', function() {
-  // Get references to the checkboxes
+
   const blockTrackersCheckbox = document.getElementById('blockTrackers');
   const useProxyCheckbox = document.getElementById('useProxy');
   const antiFingerprintingCheckbox = document.getElementById('antiFingerprinting');
@@ -30,7 +28,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
   blockTrackersCheckbox.addEventListener('change', function() {
     saveSettings();
-    // Implement logic to enable/disable tracker blocking in background.js
   });
 
   useProxyCheckbox.addEventListener('change', function() {
@@ -42,12 +39,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
   antiFingerprintingCheckbox.addEventListener('change', function() {
     saveSettings();
-    // Implement logic to enable/disable anti-fingerprinting in background.js
   });
 
   secureDNSCheckbox.addEventListener('change', function() {
     saveSettings();
-    // Implement logic to enable/disable secure DNS in background.js
   });
 
   loadSettings();
